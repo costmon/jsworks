@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 예제</title>
+</head>
+<body>
+    <h2>덧셈 계산 프로그램</h2>
+    <script>
+        //입력
+        let num1 = prompt("첫번째 수를 입력하세요", "1"); 
+        let num2 = prompt("두번째 수를 입력하세요", "1"); 
+        let sum_v;
+
+        //연산
+        //sum_v = num1 + num2; //문자연결됨
+        //parseInt()는 문자를 숫자로 변환해 주는 함수임
+        sum_v = parseInt(num1) + parseInt(num2)
+
+
+        //출력
+        document.write("두 수의 합 = " + sum_v);
+
+
+    </script>
+</body>
+</html>
