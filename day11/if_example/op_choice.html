@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건 연산자</title>
+</head>
+<body>
+    <script>
+        //수의 비교 - 결과를 10 / 20 숫자로 저장
+        var vaule;    //정수형 변수 선언
+        
+        //연산
+        vaule = (5 < 6) ? 10 : 20; 
+        //조건식이 true 이면 10을 저장, false 이면 20을 저장
+
+        console.log("결과값 : " + vaule);
+
+        //나이 비교 - 결과 'T' / 'F' 문자로 저장
+        let motherAge = 47, fatherAge = 44;
+        let result;
+
+        //연산
+        result = (motherAge != fatherAge) ? 'T' : 'F';
+
+        //출력
+        console.log("결과값 : " + result);
+
+
+    </script>
+</body>
+</html>

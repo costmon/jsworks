@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소개팅 모집 예제</title>
+</head>
+<body>
+    <script>
+        //20대의 여성이면 "모집 대상입니다"를 출력하고,
+        //아니면 "모집대상이 아닙니다."
+        let gender = "여성";
+        let age =20;
+        let result;
+
+        //연산
+        result = (gender == "여성") && (age >= 20) && (age < 30);
+
+        if(result == true){
+            document.write("모집 대상입니다.");
+        }
+        else{
+            document.write("모집 대상이 아닙니다.");
+        }
+
+
+    </script>
+</body>
+</html>

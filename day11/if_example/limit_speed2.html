@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if 조건문 예제</title>
+</head>
+<body>
+    <h2>자동차 제한 속도</h2>
+    <script>
+        /*
+        조건: 자동차 속도가 시속 50km 이상이면, 
+        "안전속도 위반! 과태료 10만원 부과" 출력하고,
+        아니면 "안전속도 준수!" 출력
+        */
+        //자료 입력
+        let limit_speed = 40;
+
+        //연산(조건문)
+       if(limit_speed >=50){
+        document.write("안전속도 위반! 과태료 10만원 부과!<br>")
+       }
+       else{
+        document.write("안전속도 준수!<br>");
+       }
+
+        //출력
+        document.write("자동차 속도는 시속" + limit_speed + "km입니다.");
+
+    </script>
+</body>
+</html>
