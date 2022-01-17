@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이중 for문 예제</title>
+</head>
+<body>
+    <script>
+        //5행 5열의 공간의 숫자 배치
+        let row = 5;
+        let col = 4;
+        for(let i = 0; i < row; i++){
+            for(let j = 1; j <=col; j++){
+                let num = i * col + j;
+                document.write("좌석" + num +" ");
+            }
+            document.write('<br>');
+        }
+    </script>
+</body>
+</html>

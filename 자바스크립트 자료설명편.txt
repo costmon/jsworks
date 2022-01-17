@@ -1,6 +1,8 @@
-*자바스크립트편
+*자바스크립트편(javaScript)
 
-자료형과 변수 
+자료형과 변수(Variable) - var i ,let result
+자료형 상수(Constant variable) - const Pl, 
+
 연산자
 숫자,문자,불리언
 변수 - 값을 1개 저장,변경 할 수 있음
@@ -8,8 +10,11 @@
 
 연산자 - 산술,비교,논리,대입(=), 복합, 조건연산자
 
-조건문 - if문,switch문
+-제어문-
+조건문 - if문,switch문,if~ else if~ else문
 반복문 - while,for문
+" "
+null - 값이 없음!
 
 10! = 1*2*3...*10
 

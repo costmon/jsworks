@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열(Array)예제</title>
+</head>
+<body>
+    <h2>배열의 생성과 사용</h2>
+    
+    <script>
+        //카트 배열 생성과 초기화(저장)
+       let cart = ['계란','생수','두부','양파'];
+
+       //특정 요소 조회
+       console.log(cart[0]);
+       console.log(cart[3]);
+
+       //배열의 크기
+       console.log(cart.length + "개");
+
+       //자료수정
+       cart[1] = "커피";
+
+       //자료 전체 출력
+       for(let i = 0; i < cart.length; i++){
+            console.log(cart[i]);
+        }
+
+        //자료 삭제
+        delete cart[2];
+
+        //배열 객체 출력
+        console.log(cart);
+    </script>
+</body>
+</html>

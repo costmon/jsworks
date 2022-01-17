@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상수 예제</title>
+</head>
+<body>
+    <h2>상수 사용하기2</h2>
+
+    <script>
+       //원의 둘레와 넓이 계산하기
+       //원의 둘레 공식 : 2 x PI X 반지름(radius)
+       //원의 넓이 공식 : PI X 반지름 X 반지름
+       //선언과 입력(저장)
+       let radius = 5;
+       const PI = 3.14;
+       let circle_len;  //실수 초기화,둘레
+       let circle_area; //넓이
+
+       //연산
+       //PI = 2.14; 상수는 변경할 수 없음.
+       circle_len = 2 * PI * radius;
+       circle_area = PI * radius * radius; 
+
+       //출력
+        document.write("원의 둘레 : " + circle_len. toFixed(2) + "<br>");
+        document.write("원의 넓이 : " + circle_area);
+        //toFixd(자리수) - 소수자리수 정하는 함수.
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열의 연산 - 최대값과 최소값</title>
+</head>
+<body>
+    <h2>배열의 연산 - 최대값과 최소값</h2>
+    <script>
+        //배열 및 변수 생성 및 초기화
+        var number = [80, 70, 65, 90, 75];
+        var max_v = number[0];  //최대값 설정(맨 처음 값)
+
+        //연산
+        for(var i = 0; i < number.length; i++){
+            if(max_v < number[i]){
+                max_v = number[i];
+            }
+        }
+
+
+        //출력
+        document.write("최대값 :" + max_v);
+
+    </script>
+</body>
+</html>

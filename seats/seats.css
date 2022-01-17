@@ -1,0 +1,13 @@
+#contesnt{
+    width: 800px; margin: 0px auto;
+}
+h1{text-align: center; color: blue; margin: 50px 0 20px;}
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    /*선 없음 */
+}
+td{
+    border: 1px solid #ccc;
+    padding: 10px;
+}

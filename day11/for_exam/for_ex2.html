@@ -8,12 +8,15 @@
 </head>
 <body>
     <script>
-        //1부터 10까지의 합계
+        //1부터 10까지의 홀수의 합계
         let sum_v = 0;
 
         for(let i = 1; i <= 10; i++){
+            if(i % 2 == 1){
             sum_v += i;    //누적 합계 sum_v = sum_v + i
             document.write(i + " ");
+            }
+            
         }
 
         document.write("<br>합계 : " + sum_v)
