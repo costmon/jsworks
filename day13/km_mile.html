@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상수 사용하기</title>
+</head>
+<body>
+    <h2>공의 속도 변환 프로그램</h2>
+    <script>
+        //km -> mile로 환산
+        const RATE_KPH_MPH = 1.609;  //변환율
+        let mph,kph;
+
+        //입력
+        kph = 150;  //시속 150km
+
+        //연산
+        mph = kph / RATE_KPH_MPH;
+        
+        document.write(kph + "km는 " + mph.toFixed(2) + "mile입니다.");
+
+    </script>
+</body>
+</html>

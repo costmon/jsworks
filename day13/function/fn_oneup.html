@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수의 정의와 호출</title>
+</head>
+<body>
+    <h2>지역변수의 유효 범위</h2>
+    <script>
+        //지역함수 생성- 함수나 제어문에서 생성
+        //소멸 - 함수나 제어문의 블럭을 벗어날때 메모리에서 해제
+        function oneUp(){
+            let x = 1;  //지역 변수
+            x++;
+            return x;
+        }
+
+        document.write(oneUp() + '<br>');  //2
+        document.write(oneUp() + '<br>');  //2
+        document.write(oneUp() + '<br>');  //2
+
+        //document.write(x);  oneUp()의 x는 이미 소멸했음
+        
+    </script>
+</body>
+</html>

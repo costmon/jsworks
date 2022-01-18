@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return이 있는 함수</title>
+</head>
+<body>
+    <h2>함수의 정의와 호출</h2>
+    <script>
+        //어떤 수를 입력하면 제곱수로 만드는 함수
+        //매개변수는 입력 역할을 함
+        function square(x){  //매개변수 x(let x)
+            return x * x;
+        }
+
+        //두 수의 차를 구하는 함수 (매개변수 2개인 경우)
+        function difference(x, y){
+            return x - y;
+        }
+
+        let num = square(4);   //return된 반환값을 저장
+        let num2 = difference(5, 10);
+
+        console.log(num);
+        console.log(num2);
+
+    </script>
+</body>
+</html>

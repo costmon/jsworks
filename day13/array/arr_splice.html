@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열의 함수 사용하기</title>
+</head>
+<body>
+    <h2>배열의 함수 사용하기</h2>
+
+    <script>
+      //배열의 특정 위치에 추가하기
+      //splice() 사용
+      let animal = ['bear', 'chicken', 'dog']
+
+      //자료 추가
+      animal.splice(1, 0, 'tiger');  //1번 인덱스에 tiger 추가, 0은 삭제 개수
+
+      //자료 삭제
+      animal.splice(2, 1);  //'chicken' 1개 삭제
+
+      //출력
+      for(var i = 0; i < animal.length; i++){
+            document.write(animal[i] + " ");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>절대값 함수</title>
+</head>
+<body>
+    <h2>절대값 함수 정의</h2>
+
+    <script>
+        //절대값 - 음수를 입력하면 양수가 되고,
+        //양수를 입력해도 양수가 됨
+        function myAbs(x){
+            if(x < 0)
+                return -x;
+            else  //x > 0
+                return x;
+        }
+
+        let res1 = myAbs(-5);
+        let res2 = myAbs(5);
+
+        document.write(res1 + '<br>');
+        document.write(res2);
+
+    </script>
+</body>
+</html>
