@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경색 바꾸기</title>
+    <style>
+        #box{
+            width: 400px;
+            height: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>배경색 바꾸기</h2>
+    <button onclick="changeBg('green')">Green</button>
+    <button onclick="changeBg('black')">Black</button>
+    <button onclick="changeBg('pink')">Pink</button>
+    <div id="box"></div>
+
+    <script>
+        function changeBg(bgcolor){ //예)let bgcolor = 'black'
+            let rect = document.getElementById('box');
+            rect.style.backgroundColor = bgcolor;
+
+            //document.getElementById('box').style.backgroundColor = bgcolor;
+        }
+    </script>
+</body>
+</html>

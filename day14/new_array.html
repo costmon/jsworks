@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 객체로 생성하기</title>
+</head>
+<body>
+    <script>
+        //배열의 생성 방법2 - new Array() 사용
+        //let cart = ["생수","라면","커피","계란"];
+        let cart = new Array("생수","라면","커피","계란");
+
+        //배열 출력
+        document.write(cart + '<br>');
+        console.log(cart);
+        document.write(cart[0] + '<br>');
+
+        //변경
+        cart[2] = "녹차";
+
+        //값 전체 출력
+        for(let i = 0; i < cart.length; i++){
+            document.write(cart[i] + " ");
+        }
+        document.write("<br>" );
+
+        //for ~ in 반복문
+        for(let item in cart){
+            document.write(cart[item] + " ");
+        }
+        //item=0, 생수
+        //item=1, 라면
+        //item=2, 녹차
+        //item=3, 계란
+
+    </script>
+</body>
+</html>

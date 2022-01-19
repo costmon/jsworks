@@ -22,7 +22,25 @@ null - 값이 없음!
 
 3! = 3*2*1
 5! = 5*4*3*2*1
-함수의 형태
+함수의 형태(function, method)
+function 함수이름(매개변수){  //함수 정의
+     변수
+        명령문(if,for)
+}
+
+함수이름(매개변수)  //호출
+매개변수 - 입력
+
+function myAbs(x){
+    if (x < 0 )
+     return -x;
+    else
+     return x;
+}
+
+let num = myAbs(-7)
+console.log(num)  //7
+
 -return이 없는 경우
 -return이 있는 경우
 

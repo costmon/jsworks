@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>짝수/홀수 판정 프로그램</title>
+</head>
+<body>
+    <h2>짝수/홀수 판정 프로그램</h2>
+    <button onclick="even_odd(11)">확인</button>
+    <p id="display"></p>
+    <script>
+        function even_odd(x){
+            if(x % 2 == 0)
+              //document.getElementById('display').innerHTML = 
+                         //x + "는(은) 홀수입니다.";
+              //document.querySelector('p').innerHTML = x + "는(은) 짝수입니다."
+              document.querySelector('#display').innerHTML = x + "는(은) 짝수입니다."
+            else
+              //document.getElementById('display').innerHTML = 
+                         //x + "는(은) 홀수입니다.";
+              //document.querySelector('p').innerHTML = x + "는(은) 홀수입니다."
+              document.querySelector('#display').innerHTML = x + "는(은) 홀수입니다."
+        }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숨기기와 보이기 효과</title>
+    <style>
+        #item{
+            width: 400px;
+            height: 300px;
+            border: 2px solid #ccc;
+        }
+        button{margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+    <h2>이미지 이벤트</h2>
+    <button onclick="show()">보이기</button>
+    <button onclick="hide()">숨기기</button>
+    <div id="item">
+    <img src="images/flower.jpg" id="pic">
+    </div>
+
+    <script>
+        function hide(){
+            let pic = document.getElementById('pic');
+            pic.style.display = "none";
+        }
+        function show(){
+            let pic = document.getElementById('pic');
+            pic.style.display = "block";
+        }
+    </script>
+</body>
+</html>
