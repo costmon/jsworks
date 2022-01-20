@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window 객체의 시간 설정 함수</title>
+</head>
+<body>
+    <h3>시간 설정하기</h3>
+
+    <script>
+        //setInterval(함수,시간) - 함수에 괄호가 없음.
+        //3초후에 알림창이 뜨고, 1초에 한번 계속 창이 반복
+        //setInterval(sayHello, 3000);
+
+        function sayHello(){
+            alert("안녕하세요~");
+        }
+
+        //3초 후에 알림창이 뜨고, 확인 누르면 종료.
+        setTimeout(closeHello, 3000);
+
+        function closeHello(){
+            alert("환영합니다.");
+        }
+    </script>
+</body>
+</html>

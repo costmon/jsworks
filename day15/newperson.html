@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 정의하고 사용하기</title>
+</head>
+<body>
+    <script>
+      //생성자 함수(클래스) - 이름은 대문자로 시작
+      function Person(naming, age, isMerried){
+          this.naming = naming;  //맴버 변수
+          this.age = age;
+          this.isMerried = isMerried;
+
+          this.info = function(){
+              if(this.isMerried == true)
+                 document.write(this.naming + "는(은) 기혼입니다.")
+              else{
+                 document.write(this.naming + "는(은) 미혼입니다.")
+                }
+          }
+      }
+
+      let p1 = new Person("김하나", 21, false);
+      let p2 = new Person("오과장", 44, true);
+
+      document.write("이름 :" + p1.naming + "<br>");
+      document.write("나이 :" + p1.age + "<br>");
+      p1.info();
+      document.write("<br>====================<br>")
+      
+      
+      document.write("이름 :" + p2.naming + "<br>");
+      document.write("나이 :" + p2.age + "<br>");
+      p2.info();
+    </script>
+</body>
+</html>

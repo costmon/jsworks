@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date 객체 사용</title>
+</head>
+<body>
+    <p>현재 날짜와 시간</p>
+    
+    <script>
+        const now = new Date();
+        //날짜
+        document.write("년도 :" + now.getFullYear() + '<br>');
+        document.write("월 :" + (now.getMonth() + 1)  + '<br>');
+        document.write("일 :" + now.getDate() + '<br>');
+        document.write("요일 :" + now.getDay() + '<br>');
+
+
+        //시간
+        document.write("시 :" + now.getHours() + '<br>');
+        document.write("분 :" + now.getMinutes() + '<br>');
+        document.write("초 :" + now.getSeconds() + '<br>');
+        document.write("현재까지 시간 :" + Math.floor(now.getTime()/1000) + '초<br>');
+        //1970.1.1 자정부터 지금까지 밀리초로 반환.
+
+    </script>
+</body>
+</html>
