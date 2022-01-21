@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onClick 속성 예제</title>
+</head>
+<body>
+    <h2>이미지를 클릭하면 1초 후에 이미지 변경</h2>
+    <img src="images/cup-1.png" onclick="changePic()" id="cup">
+
+    <script>
+        function changePic(){
+            let pic = document.querySelector("#cup");
+            setTimeout(function(){
+                pic.src = "images/cup-2.png";
+            },1000);
+           
+        }
+    </script>
+</body>
+</html>

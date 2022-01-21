@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열의 위치 찾는 함수</title>
+</head>
+<body>
+    <h2>Array 객체의 내장 함수- indexOf()</h2>
+    <script>
+        //문자열은 1차원 배열임.
+        let str = "Hello world, welcome world";
+
+        let n1 = str.indexOf("world");  //일치하면 첫번째 위치 반환
+        let n2 = str.indexOf("korea");  //일치하지 않으면 -1을 반환
+        let n3 = str.lastIndexOf('world');
+
+        console.log(n1); //6
+        console.log(n2); //-1
+        console.log(n3); //21
+    </script>
+</body>
+</html>

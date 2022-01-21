@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체의 onclick 속성 예제</title>
+</head>
+<body>
+    <img src="images/easys-1.jpg" id="kid">
+
+    <script>
+        let pic = document.querySelector("#kid");
+        //addEventListener(이벤트, 함수)
+        pic.addEventListener("mouseover", changePic);
+        pic.addEventListener("mouseout", originPic);
+
+        function changePic(){
+            pic.src = "images/easys-2.jpg";
+        }
+        function originPic(){
+            pic.src = "images/easys-1.jpg";
+        }
+    </script>
+</body>
+</html>

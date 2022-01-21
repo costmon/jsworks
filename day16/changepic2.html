@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체의 onclick 속성 예제</title>
+</head>
+<body>
+    <img src="images/cup-1.png" id="cup">
+
+    <script>
+        //객체의 onclick 속성
+       let pic = document.querySelector("#cup");
+       pic.onmouseover = changePic;  //마우스 올렸을때 이벤트
+       pic.onmouseout = originPic;   //마우스가 벗어났을때 이벤트
+
+       function changePic(){
+           pic.src = "images/cup-2.png";
+       }
+
+       function originPic(){
+           pic.src = "images/cup-1.png";
+       }
+    </script>
+</body>
+</html>

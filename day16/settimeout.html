@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout</title>
+</head>
+<body>
+    <h2>Window 객체</h2>
+    <button onclick="stop()">stop</button>
+    <h3 id="demo"></h3>
+
+    <script>
+        //설정된 시간이 종료됨
+        // setTimeout(myGreeting, 3000);
+
+        // function myGreeting(){
+        //     document.getElementById("demo").innerHTML = "Happy Birthday!!";
+        // }
+
+        //실행 함수(이름없는 함수)
+        const timeout = setTimeout(function(){
+            document.getElementById("demo").innerHTML = "Happy Birthday!!"
+        }, 5000);
+
+        function stop(){
+            clearTimeout(timeout);
+        }
+
+    </script>
+</body>
+</html>

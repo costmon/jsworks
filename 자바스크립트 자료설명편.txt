@@ -1,0 +1,91 @@
+*자바스크립트편(javaScript)
+
+자료형과 변수(Variable) - var i ,let result
+자료형 상수(Constant variable) - const Pl, 
+배열 - 자료구조(대용량의 자료)
+
+연산자
+숫자,문자,불리언
+변수 - 값을 1개 저장,변경 할 수 있음
+(상수)- 사실,진리,변환 단위(선언한 후에 변경할 수 없음!)
+km - mile로 환산
+
+연산자 - 산술,비교,논리,대입(=), 복합, 조건연산자
+
+-제어문-
+조건문 - if문,switch문,if~ else if~ else문
+반복문 - while,for문
+" "
+null - 값이 없음!
+
+10! = 1*2*3...*10
+
+3! = 3*2*1
+5! = 5*4*3*2*1
+함수의 형태(function, method)
+function 함수이름(매개변수){  //함수 정의
+     변수
+        명령문(if,for)
+}
+
+함수이름(매개변수)  //호출
+매개변수 - 입력
+
+function myAbs(x){
+    if (x < 0 )
+     return -x;
+    else
+     return x;
+}
+
+let num = myAbs(-7)
+console.log(num)  //7
+
+-return이 없는 경우
+-return이 있는 경우
+
+절대값
+10 -> 10
+-10 -> 10
+
+객체(클래스) - 생성자함수 --> 참조 자료형
+자료형 - 숫자형(1.2.3),문자형("),불린형(true/false),배열([]),참조자료형
+
+내장함수 - write(), alert(), log(), push(), pop()
+사용자 정의 함수 
+function 함수이름(){
+     변수
+     명령문
+}
+
+내장 객체 - Math, Date, Document, Window
+사용자 정의 자료형
+function 클래스이름(){
+     변수
+     명령문
+     함수
+}
+
+about:blank 치면 개발연습가능 콘솔!!
+
+객체(object)
+-모든 자료형을 포함할 수 있음: 복합자료형
+-함수도 포함 가능
+1.내장 객체(클래스-class)
+   -Math:Math.random(): 정적클래스
+   -Date:const now = new Date() : 동적 클래스
+         now.getMonth();
+2.사용자 객체
+.생성자 함수
+  -function Car(brand, cc, color){
+       this.brand = brand;
+       this.cc = cc;
+
+       this.drive = function(){
+            console.log("차가 달린다");
+       } 
+  }
+
+  let car1 = new Car("Sonata", 2000, "white")
+  car1.brand;
+  car1.drive();
