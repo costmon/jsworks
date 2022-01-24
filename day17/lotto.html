@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 복권 추첨</title>
+    <style>
+        section{
+            width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h2{
+            background-color: #eee;
+            border: 1px solid #aaa;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        p{text-align: center; font-size: 1.5em;}
+    </style>
+</head>
+<body>
+    <section>
+        <h2>로또 추첨 번호</h2>
+    </section>
+    
+    <script>
+        //입력(저장)
+        let lotto = new Array(6);   //로또 배열 생성
+
+        //랜덤 번호 추첨
+        document.write("<p>번호 : ");
+        for(let i = 0; i < lotto.length; i++){
+            let randNum = Math.floor((Math.random() * 45)) + 1;
+            lotto[i] = randNum;
+            console.log(lotto);
+            for(let j = 0; j < i; j++){
+                if(lotto[j] == lotto[i]){  //중복되었다면
+                    console.log("중복 : " + lotto[i]);
+                    i--;    //i -= 1              //인덱스 1 감소(배열의 이전 공간 삭제)
+                }
+            }
+        }
+
+        //출력
+        for(let i = 0; i < lotto.length; i++){
+            document.write(lotto[i] + ", ");
+        }
+    </script>
+</body>
+</html>

@@ -28,7 +28,8 @@
     <script>
         let member = prompt("전체 응모자 수 : ");  //응모자 수
         let win = prompt("당첨자 수 : ");
-        let winner = new Array(parseInt(win));  //입력은 문자가 들어옴 - win을 숫자 변경
+        //let winner = new Array(parseInt(win));  //입력은 문자가 들어옴 - win을 숫자 변경
+        let winner = new Array(Number(win));  //입력은 문자가 들어옴 - win을 숫자 변경
 
         if(member == null || winner == null){
             document.write("<p>입력이 취소되었습니다.")
@@ -41,6 +42,16 @@
             //랜덤 번호 추첨
             for(let i = 0; i < winner.length; i++){
                 winner[i] = Math.floor(Math.random() * member) + 1;
+                console.log(winner);
+                for(let j = 0; j < i; j++){
+                    if(winner[j] == winner[i]){  
+                        i--;    //i -= 1              
+                    }
+                }
+            }
+
+            //출력
+            for(let i = 0; i < winner.length; i++){
                 document.write(winner[i] + "번, ");
             }
         }

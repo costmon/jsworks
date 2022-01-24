@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout</title>
+</head>
+<body>
+    <h2>Window 객체</h2>
+    <button onclick="stop()">stop</button>
+    <h3 id="demo"></h3>
+    
+
+    <script>
+        //설정된 시간이 종료됨
+        let message = ["생일 축하해!!", "고맙습니다.", "오늘도 좋은 하루!!"]
+        let msg_idx = 0;    //배열의 위치값을 맨 처음 값 설정
+        
+        myGreeting();  //호출
+       
+
+        function myGreeting(){
+            document.getElementById("demo").innerHTML = message[msg_idx];
+            msg_idx++;   //msg_idx += 1
+            //다시 0번 인덱스로 설정
+            console.log(message.length);
+            if(msg_idx === message.length){   //배열의 크기와 같으면
+                msg_idx = 0;
+            }
+
+            setTimeout(myGreeting, 2000);  //콜백함수(함수의 매개변수로 함수를 설정)
+        }
+
+
+    </script>
+</body>
+</html>
