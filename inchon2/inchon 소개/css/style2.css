@@ -1,0 +1,62 @@
+/* 모바일 기준*/
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Nanum+Pen+Script&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box;}
+#container{width: 100%; margin: 0 auto;}
+
+/* header 영역 */
+header{width: 100%; height: 250px;}
+nav{width: 100%; height: 60px; background-color: #000;}
+nav #main-nav{list-style: none; text-align: right; margin-right: 100px;}
+nav #main-nav li{display: inline-block;margin: 15px;}
+nav a{color: #fff; text-decoration: none;}
+nav a:hover{color: yellow;}
+header #main-pic img{width: 100%; height: 210px;}
+
+/* 본문 영역 */
+section{height: 350px; padding: 15px;}
+section:nth-child(3n){background-color: #eee;}
+section .page-title{margin-top: 30px;}
+section .page-title h1{font-family: 'Nanum Pen Script', cursive; font-size: 2em;}
+section .content{margin: 10px;}
+section .content p{line-height: 2em;}
+#intro .photo, #choice .photo, #map .photo{display: none;} /*이미지 숨기기 */
+#choice h2{line-height: 2em;}
+#choice ol{padding-left: 30px;}
+#choice ol li{line-height: 2em;}
+
+/* footer 영역 */
+footer{height: 80px; border-top: 2px solid #333;}
+#bottomMenu{list-style: none; margin: 10px 10px 10px 30px;}
+#bottomMenu li{display: inline-block; margin: 10px 0;
+   border-right: 1px solid #ccc; padding: 0 10px;}
+#bottomMenu li a{text-decoration: none; color:  #000;}
+#bottomMenu li:last-child{border: none;}
+
+
+
+
+/* 태블릿 버전 */
+@media screen and (min-width:780px) {
+    #container{width: 100%; margin: 0 auto;}
+    header{height: 300px;}
+    nav #main-nav{list-style: none; text-align: right; margin-right: 100px;}
+    header #main-pic img{width: 100%; height: 260px;}
+    section{height: 400px;}
+    #intro, #choice{float: left; width: 50%;}
+    #map{clear: both;}
+}
+
+
+
+/* PC 버전 */
+@media screen and (min-width: 1000px) {
+    #container{width: 1000px; margin: 0 auto;}
+    header{height: 320px;}
+    nav #main-nav{list-style: none; text-align: right; margin-right: 100px;}
+    header #main-pic img{width: 100%; height: 280px;}
+    section{height: 350px;}
+    #intro, #choice, #map{width: 100%;}
+    #intro .photo img, #map .photo img{float: left; margin-right: 20px; border-radius: 5px;}
+    #choice .photo img{float: right; margin-right: 20px;}
+    #intro .photo, #choice .photo, #map .photo{display: block;} /* 이미지 보이기*/
+}

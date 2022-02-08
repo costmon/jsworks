@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인천 먹거리 소개!</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <h1><a href="index.html">Dream incheon</a></h1>
+            </div>
+            <nav>
+                <ul id="topMenu">
+                    <li><a href="index.html">인천 소개</a></li>
+                    <li><a href="product.html">인천 먹거리 소개</a></li>
+                    <li><a href="#">Q&A</a></li>
+                    <li><a href="about_me.html">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="product">
+            <section id="description">
+                <h2>인천 먹거리 추천!</h2>
+                <a href="medias/인천 맛집best7.mp4" target="_blank">
+                <img src="images/인천 맛집 사진.jpg" alt="인천맛집소개" width="700" height="500">
+                </a>
+                
+            </section>
+            <section id="receipe">
+                    <h2>인천 맛집 소개</h2>
+                    
+                    <ol>
+                        <li>단풍나무: 육개장,오리,닭요리 맛집</li>
+                        <li>금돈: 돈까스,돈카스샌드 맛집</li>
+                        <li>백암토종왕순대: 순대국 맛집</li>
+                        <li>우와: 오코노미야끼 맛집</li>
+                        <li>미락육회막국수: 막국수 맛집</li>
+                        <li>옥수잔치국수: 잔치국수 맛집</li>
+                        <li>팔심상참치: 참치회 맛집</li>
+                    </ol><br>
+
+                    <h3>자세한 정보를 알고싶으시다면 위에 사진을<br> 
+                        눌러주시면 영상을 보실수가 있습니다.</h3>
+            </section>
+            <section id="product">
+                <h2>시간 설정</h2>
+                <p id="display"></p>
+                <script>
+                    setInterval(myWatch, 500);
+            
+                    function myWatch(){
+                        const date = new Date();
+                        let now = date.toLocaleTimeString();      
+                        document.getElementById("display").innerHTML = now;         
+                    }
+                </script>
+            </section>
+        </main>
+        <footer>
+            <ul id="bottomMenu">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">서비스이용약관</a></li>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
