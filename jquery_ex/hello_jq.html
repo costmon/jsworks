@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이 쿼리 예제</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <style>
+        /* p{color: blue;} */
+    </style>
+</head>
+<body>
+    <h2>방문을 환영합니다.</h2>
+    <div class="info">
+        <p>나는 인천에 살고 있어요.</p>
+        <p class="me">내 이름은 김초엽입니다.</p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("p").css('color', 'blue');  //글꼴 스타일 파랑색(태그선택)
+            // $("me").css('color', 'red');  //클래스 선택
+            $("me").css({'color':'red', 'font-size': '1.3em'});  //클래스 선택
+
+            // append()- 객체 함수(추가)
+            $('.info').append("<p>감사합니다.</p>");
+        });  
+    </script>
+</body>
+</html>
